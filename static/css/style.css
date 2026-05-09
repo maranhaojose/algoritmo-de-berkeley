@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100%;
+    height: 100vh;
+
+    background: #ececec;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.main-container {
+
+    width: 60%;
+    height: 85vh;
+
+    display: flex;
+    gap: 35px;
+}
+
+
+/* =========================
+   PAINÉIS EXTERNOS
+========================= */
+
+.left-panel,
+.right-panel {
+
+    border: 2px solid #333;
+    border-radius: 28px;
+
+    background: #f3f3f3;
+
+    padding: 22px;
+}
+
+.left-panel {
+
+    width: 35%;
+}
+
+.right-panel {
+
+    flex: 1;
+}
+
+
+/* =========================
+   CONTAINER INTERNO
+========================= */
+
+.inner-box {
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #333;
+    border-radius: 28px;
+
+    background: #f8f8f8;
+
+    padding: 35px;
+}
+
+
+/* =========================
+   PAINEL ESQUERDO
+========================= */
+
+#inputs-horarios,
+#inputs-envio {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 28px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+label {
+
+    font-size: 20px;
+    color: #333;
+}
+
+input[type="time"] {
+
+    width: 120px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 10px;
+    border: 2px solid #444;
+
+    background: white;
+
+    font-size: 18px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+
+    display: none;
+    -webkit-appearance: none;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+
+    width: 180px;
+
+    padding: 14px;
+
+    border-radius: 14px;
+    border: 2px solid #444;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+button:hover {
+
+    background: #e7e7e7;
+}
+
+
+/* =========================
+   TITULOS
+========================= */
+
+h2 {
+
+    text-align: center;
+
+    font-size: 28px;
+
+    color: #333;
+}
+
+.subtitulo {
+
+    font-size: 22px;
+    color: #333;
+}
+
+
+/* =========================
+   RESULTADO
+========================= */
+
+#resultado {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 22px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   BLOCOS DE DADOS
+========================= */
+
+.info-box {
+
+    width: 90%;
+
+    border: 1px solid #ccc;
+
+    border-radius: 16px;
+
+    background: white;
+
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    text-align: left;
+}
+
+.info-box h3 {
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+.info-box p {
+
+    line-height: 1.5;
+
+    color: #444;
+}
+
+
+/* =========================
+   EXCEPTION
+========================= */
+
+#exception-box {
+
+    width: 90%;
+
+    height: 85px;
+
+    border-radius: 18px;
+
+    border: 3px solid red;
+
+    background: #ffd7d7;
+
+    color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   UTILIDADES
+========================= */
+
+.hidden {
+    display: none !important;
+}
+
+#processos-container {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}

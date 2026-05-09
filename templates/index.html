@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Berkeley Sync</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <!-- LEFT -->
+    <div class="left-panel">
+
+        <div class="inner-box">
+
+            <h2 id="titulo-esquerda">
+                Hora Local
+            </h2>
+
+            <!-- TELA 1 -->
+            <div id="inputs-horarios">
+
+                <div class="input-group">
+                    <label>Servidor</label>
+                    <input type="time" id="servidor">
+                </div>
+
+                <div class="input-group">
+                    <label>Cliente 1</label>
+                    <input type="time" id="cliente1">
+                </div>
+
+                <div class="input-group">
+                    <label>Cliente 2</label>
+                    <input type="time" id="cliente2">
+                </div>
+
+                <div class="input-group">
+                    <label>Cliente 3</label>
+                    <input type="time" id="cliente3">
+                </div>
+
+                <button id="btnSincronizar">
+                    Sincronizar
+                </button>
+
+            </div>
+
+            <!-- TELA 3 -->
+            <div id="inputs-envio" class="hidden">
+
+                <div class="subtitulo">
+                    Hora envio
+                </div>
+
+                <div class="input-group">
+                    <label>Cliente 1</label>
+                    <input type="time" id="envio1">
+                </div>
+
+                <div class="input-group">
+                    <label>Cliente 2</label>
+                    <input type="time" id="envio2">
+                </div>
+
+                <div class="input-group">
+                    <label>Cliente 3</label>
+                    <input type="time" id="envio3">
+                </div>
+
+                <button id="btnEnviar">
+                    Enviar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-panel">
+
+        <div class="inner-box">
+
+            <div id="resultado">
+
+                Aguardando sincronização
+
+            </div>
+
+            <div
+                id="exception-box"
+                class="hidden"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script
+    src="{{ url_for('static', filename='js/app.js') }}"
+></script>
+
+</body>
+</html>
