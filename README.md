@@ -41,7 +41,7 @@ A aplicação permite:
 
 
 
-Certifique-se de estar na pasta raiz do projeto (`berkeley`) antes de iniciar os passos abaixo.
+Certifique-se de estar na pasta raiz do projeto (`algoritmo-de-berkeley`) antes de iniciar os passos abaixo.
 
 
 
