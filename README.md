@@ -1,15 +1,9 @@
-
-
-
-
-
-
 # Sincronização de Clocks com Algoritmo de Berkeley
 
 
  **Componentes**
  ``` 
- Denis dos santos
+ Denis Do Nascimmento Rodrigues
  José Maranhão Da silva Neto
  ```
 
@@ -47,7 +41,7 @@ A aplicação permite:
 
 
 
-Certifique-se de estar na pasta raiz do projeto (`berkley`) antes de iniciar os passos abaixo.
+Certifique-se de estar na pasta raiz do projeto (`berkeley`) antes de iniciar os passos abaixo.
 
 
 

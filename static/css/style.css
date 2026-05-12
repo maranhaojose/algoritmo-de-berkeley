@@ -19,9 +19,6 @@ body {
 }
 
 
-/* =========================
-   CONTAINER PRINCIPAL
-========================= */
 
 .main-container {
 
@@ -33,9 +30,6 @@ body {
 }
 
 
-/* =========================
-   PAINÉIS EXTERNOS
-========================= */
 
 .left-panel,
 .right-panel {
@@ -59,9 +53,6 @@ body {
 }
 
 
-/* =========================
-   CONTAINER INTERNO
-========================= */
 
 .inner-box {
 
@@ -73,13 +64,14 @@ body {
 
     background: #f8f8f8;
 
-    padding: 35px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
 }
 
-
-/* =========================
-   PAINEL ESQUERDO
-========================= */
 
 #inputs-horarios,
 #inputs-envio {
@@ -97,9 +89,6 @@ body {
 }
 
 
-/* =========================
-   INPUTS
-========================= */
 
 .input-group {
 
@@ -140,9 +129,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 
-/* =========================
-   BOTÕES
-========================= */
 
 button {
 
@@ -168,10 +154,6 @@ button:hover {
 }
 
 
-/* =========================
-   TITULOS
-========================= */
-
 h2 {
 
     text-align: center;
@@ -188,9 +170,6 @@ h2 {
 }
 
 
-/* =========================
-   RESULTADO
-========================= */
 
 #resultado {
 
@@ -200,38 +179,17 @@ h2 {
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
     align-items: center;
 
-    gap: 22px;
+    gap: 20px;
 
-    text-align: center;
+    overflow-y: auto;
+
+    padding-right: 4px;
+
+    min-height: 0;
 }
 
-
-/* =========================
-   BLOCOS DE DADOS
-========================= */
-
-.info-box {
-
-    width: 90%;
-
-    border: 1px solid #ccc;
-
-    border-radius: 16px;
-
-    background: white;
-
-    padding: 18px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 8px;
-
-    text-align: left;
-}
 
 .info-box h3 {
 
@@ -248,9 +206,6 @@ h2 {
 }
 
 
-/* =========================
-   EXCEPTION
-========================= */
 
 #exception-box {
 
@@ -276,10 +231,6 @@ h2 {
 }
 
 
-/* =========================
-   UTILIDADES
-========================= */
-
 .hidden {
     display: none !important;
 }
@@ -294,4 +245,15 @@ h2 {
     flex-direction: column;
 
     align-items: center;
+}
+
+#resultado::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+#resultado::-webkit-scrollbar-thumb {
+
+    background: #bbb;
+    border-radius: 10px;
 }

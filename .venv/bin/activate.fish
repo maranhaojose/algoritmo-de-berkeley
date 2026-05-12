@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/jose/Documentos/uespi/SD/algoritmo_lamport/berkley/.venv
+set -gx VIRTUAL_ENV /home/jose/Documentos/uespi/SD/algoritmo_lamport/berkeley/.venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

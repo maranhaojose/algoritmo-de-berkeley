@@ -15,9 +15,7 @@ document.getElementById("titulo-esquerda");
 let dadosSync = null;
 
 
-// ===========================
-// Utils
-// ===========================
+// Edita a hora
 
 function horaParaMinutos(hora) {
 
@@ -49,9 +47,7 @@ function esconderErro() {
 }
 
 
-// ===========================
-// TELA 1 -> TELA 2
-// ===========================
+// sincroniza os horários
 
 document
 .getElementById("btnSincronizar")
@@ -106,9 +102,7 @@ document
 });
 
 
-// ===========================
-// TELA 2
-// ===========================
+// exibe dados de sincronização
 
 function renderTela2(data) {
 
@@ -164,9 +158,7 @@ function renderTela2(data) {
 }
 
 
-// ===========================
-// TELA 3 -> TELA 4
-// ===========================
+// envia os horarios de cada cliente
 
 document
 .getElementById("btnEnviar")
@@ -247,9 +239,7 @@ document
 });
 
 
-// ===========================
-// TELA 4
-// ===========================
+// exibi os dados de sincronização e a ordem dos processos
 
 function renderTela4(dados) {
 
